@@ -4,12 +4,8 @@ import './index.css';
 import App from './App';
 import {Provider} from 'react-redux'
 import * as serviceWorker from './serviceWorker';
-import spellReducer from './store/reducer/index';
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-const store = createStore(spellReducer, applyMiddleware(thunk));
+import { store } from './store';
 
 
 ReactDOM.render(

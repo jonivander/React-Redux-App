@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchSpells } from '../store';
+import { fetchSpells } from '../actions';
 
 const Spells = props => {
-    useEffect(() => {
+    useEffect((props) => {
         props.fetchSpells();
     }, []);
     console.log(props); 

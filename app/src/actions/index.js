@@ -16,7 +16,7 @@ export const fetchSpells = () => (dispatch) => {
 }
 
 const thunk = (store) => (next) => (action) => {
-    if (typeof action === 'object'){
+    if (typeof action === 'object') {
         next(action);
     } else if (typeof action === 'function') {
         action(store.dispatch); 
